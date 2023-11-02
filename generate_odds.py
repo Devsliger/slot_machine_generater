@@ -1,12 +1,12 @@
 
 import random
 
+# Number of rows and columns in the slot machine grid
 ROWS = 3
-
 COLS = 3
 
 
-
+# Dictionary representing symbols and their counts
 symbol_count = {
                 'A': 2,
                 'B': 4,
