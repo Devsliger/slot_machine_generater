@@ -28,6 +28,7 @@ symbol_value = {
 def check_winnings(columns, lines, bet, values):
     winnings = 0
     winning_lines = []
+
     for line in range(lines):
         symbol = columns[0][line]
         for column in columns:
@@ -35,9 +36,12 @@ def check_winnings(columns, lines, bet, values):
             if symbol != symbol_to_check:
                 break
         else:
+            # This block is executed if the inner loop completes without a break
             winnings += values[symbol] * bet
             winning_lines.append(line + 1)
+
     return winnings, winning_lines
+
 
 # Function to generate the slot machine grid
 def get_slot_machine(cols, rows, symbols):
