@@ -1,1 +1,1 @@
-# slot_machine_generater
+This Python program simulates a slot machine game, generating a grid of symbols based on the specified number of rows, columns, and symbol counts. The symbols are arranged randomly, mimicking the functionality of a real slot machine.
